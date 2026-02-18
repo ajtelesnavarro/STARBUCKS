@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>STARBUCKS</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=DM+Serif+Text:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- este é o corpo do nosso site, como se fosse o quadro em branco -->
+    <header>
+        <div class="container_logo">
+            <img src="../IMAGENS/Starbucks_Corporation_Logo_2011.svg.png" width="105px">
+            <a href="../HTML/index.html" class="redirecionar_index">
+                <div class="titulo_site">
+                    <p>STARBUCKS</p>
+                </div>
+            </a>
+            <!-- este é o cabeçalho do nosso site, nele conterá a logo, e o menu de navegação -->
+        </div>
+        <nav>
+            <!-- este é o comando específico que determina que tudo oq estiver aqui dentro é o menu de navegação, e é seguido por: -->
+            <ul class="menu-principal">
+                <!-- a criação de uma lista -->
+                <li>
+                    <!-- item de uma lista, porém, como vamos fazer com que cada item desta lista tenha outros itens precisamos de: -->
+                    <div>
+                        <!-- uma "caixinha" que vai guardar todas as nossas opções, porém como queremos que ela seja "dropdown", ou seja, aparecer
+                        apenas quando for clicada, precisamos de duas coisas: -->
+                        <input type="checkbox" id="lista-menu">
+                        <!-- criamos um campo, que com checkbox faz ele ser marcavel, e adicionamos uma id que precisaremos no: -->
+                        <label for="lista-menu">Menu</label>
+                        <!-- agora nos devemos criar a lista que vai ficar escondida no menu dropdown com: -->
+                        <ul class="dropdown">
+                            <li><a href="../HTML/bebidas_quentes.html">Bebidas Quentes</a></li>
+                            <li><a href="../HTML/bebidas_geladas.html">Bebidas Geladas</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="lista-pedidos">
+                        <label for="lista-pedidos">Pedidos</label>
+                        <ul class="dropdown">
+                            <li><a href="#">Fazer um pedido</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container_formulario_pedido_geral">
+        <h1 style="font-size: 28px;">Faça seu pedido</h1>
+        <form>
+            <div class="container_formulario_pedido_bloco">
+                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Sobrenome">
+            </div>
+            <div class="container_formulario_pedido_bloco">
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Senha">
+            </div>
+            <p>Já tem uma conta? Faça <a href="../HTML/login.html">login</a></p>
+            <div class="container_formulario_pedido_bloco">
+                <input type="number" placeholder="Telefone">
+            </div>
+            <div class="container_formulario_pedido_bloco">
+                <select>
+                    <option>Selecione a bebida</option>
+                    <option>Caramel Macchiato</option>
+                    <option>Caffè Mocha</option>
+                    <option>Flat White</option>
+                    <option>Cinnamon Dolce Latte</option>
+                    <option>Blonde Vanilla Latte</option>
+                    <option>Pumpkin Spice Latte</option>
+                    <option>Brown Sugar Oatmilk Shaken Espresso</option>
+                    <option>Capuccino</option>
+                    <option>Chai Tea Latte</option>
+                    <option>Espresso Macchiato</option>
+                    <option>Iced Caramel Macchiato</option>
+                    <option>Vanilla Sweet Cream Cold Brew</option>
+                    <option>Pumpkin Cream Cold Brew</option>
+                    <option>Pink Drink</option>
+                    <option>Strawberry Açaí Refresher</option>
+                    <option>Iced White Mocha</option>
+                    <option>Iced Brown Suga Oatmilk Shaken Espresso</option>
+                    <option>Cold Brew</option>
+                    <option>Iced Blonde Vanilla Latte</option>
+                    <option>Iced Cinnamon Dolce Latte</option>
+                </select>
+                <input type="number" placeholder="Quantidade">
+            </div>
+            <div class="container_formulario_pedido_bloco">
+                <textarea placeholder="Quer algum detalhes especial? Conte-nos!"></textarea>
+            </div>
+            <label class="checkbox-linha">
+                <input type="checkbox">
+                <span>Aceito receber notícias do meu pedido pelo meu email</span>
+            </label>
+            <label class="checkbox-linha">
+                <input type="checkbox">
+                <span>Aceito receber promoções e ofertas em meu email</span>
+            </label>
+            <div class="container_formulario_pedido_bloco">
+                <button type="reset"><b>Limpar</b></button>
+                <button type="submit"><b>Enviar</b></button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

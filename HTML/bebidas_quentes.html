@@ -1,0 +1,162 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BEBIDAS QUENTES</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=DM+Serif+Text:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- este é o corpo do nosso site, como se fosse o quadro em branco -->
+    <header>
+        <div class="container_logo">
+            <img src="../IMAGENS/Starbucks_Corporation_Logo_2011.svg.png" width="105px">
+            <a href="../HTML/index.html" class="redirecionar_index">
+                <div class="titulo_site">
+                    <p>STARBUCKS</p>
+                </div>
+            </a>
+            <!-- este é o cabeçalho do nosso site, nele conterá a logo, e o menu de navegação -->
+        </div>
+        <nav>
+            <!-- este é o comando específico que determina que tudo oq estiver aqui dentro é o menu de navegação, e é seguido por: -->
+            <ul class="menu-principal">
+                <!-- a criação de uma lista -->
+                <li>
+                    <!-- item de uma lista, porém, como vamos fazer com que cada item desta lista tenha outros itens precisamos de: -->
+                    <div>
+                        <!-- uma "caixinha" que vai guardar todas as nossas opções, porém como queremos que ela seja "dropdown", ou seja, aparecer
+                        apenas quando for clicada, precisamos de duas coisas: -->
+                        <input type="checkbox" id="lista-menu">
+                        <!-- criamos um campo, que com checkbox faz ele ser marcavel, e adicionamos uma id que precisaremos no: -->
+                        <label for="lista-menu">Menu</label>
+                        <!-- agora nos devemos criar a lista que vai ficar escondida no menu dropdown com: -->
+                        <ul class="dropdown">
+                            <li><a href="../HTML/bebidas_quentes.html">Bebidas Quentes</a></li>
+                            <li><a href="../HTML/bebidas_geladas.html">Bebidas Geladas</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="lista-pedidos">
+                        <label for="lista-pedidos">Pedidos</label>
+                        <ul class="dropdown">
+                            <li><a href="../HTML/fazer_pedido.html">Fazer um pedido</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Bebidas Quentes</h1>
+    <p>As bebidas quentes são perfeitas para proporcionar conforto e aconchego em qualquer momento
+         do dia. Preparadas à base de café, leite e combinações especiais de sabores, elas
+          oferecem aromas marcantes e texturas cremosas que aquecem e despertam os sentidos.
+           Ideais para dias frios ou para quem aprecia um sabor
+         mais intenso e envolvente, essas bebidas equilibram acidez, corpo e doçura em cada gole.</p>
+    <section class="conteudo">
+        <div class="container_menu_bebidas">
+            <img src="../IMAGENS/caramel_machiatto_foto.png" width="400px">
+            <div class="text_caramelmachiatto">
+                <h1 style="text-align: center;">Caramel Macchiato</h1>
+                <div class="container_foto_especificacoes_cafe">
+                    <img src="../IMAGENS/caramel_macchiato_esp.png">
+                </div>
+                <p>O Caramel Macchiato é uma bebida clássica e elegante, feita com leite vaporizado, 
+                    xarope de baunilha e uma dose de espresso adicionada por cima, finalizada com uma 
+                    generosa camada de calda de caramelo. Ele combina o sabor intenso do café com a doçura 
+                    da baunilha e do caramelo, criando uma bebida equilibrada e cremosa. Sua apresentação 
+                    em camadas torna a experiência visual ainda mais atraente. 
+                    É uma ótima escolha para quem busca um café sofisticado e levemente adocicado.</p>
+            </div>
+        </div>
+        <div class="container_menu_bebidas">
+            <img src="../IMAGENS/caffe_mocha_foto.png" width="400px">
+            <div class="text_caffemocha">
+                <h1 style="text-align: center;">Caffè Mocha</h1>
+                <div class="container_foto_especificacoes_cafe">
+                    <img src="../IMAGENS/caffe_mocha_esp.png">
+                </div>
+                <p>O Caffè Mocha é perfeito para quem ama chocolate e café. Ele mistura espresso, 
+                    leite vaporizado e calda de chocolate, geralmente finalizado com chantilly. O 
+                    resultado é uma bebida doce, cremosa e com sabor marcante de chocolate. 
+                    Sua textura é encorpada e envolvente a cada gole.
+                     É ideal para quem gosta de transformar o café em uma experiência quase de sobremesa.</p>
+            </div>
+        </div>
+        <div class="container_menu_bebidas">
+            <img src="../IMAGENS/flat_white_foto.png" width="400px">
+            <div class="text_flatwhite">
+                <h1 style="text-align: center;">Flat White</h1>
+                <div class="container_foto_especificacoes_cafe">
+                    <img src="../IMAGENS/flat_white_esp.png">
+                </div>
+                <p>O Flat White é uma bebida mais intensa e menos doce, preparada com uma dose dupla de 
+                    espresso e leite vaporizado com microespuma bem fina. Ele tem textura aveludada e sabor 
+                    forte de café, sendo ideal para quem prefere menos açúcar e mais intensidade. A 
+                    microespuma proporciona uma sensação 
+                    suave e uniforme na boca. É uma escolha moderna para apreciadores de café mais puro.</p>
+            </div>
+        </div>
+        <div class="container_menu_bebidas">
+            <img src="../IMAGENS/cinnamon_dolce_latte_foto.png" width="400px">
+            <div class="text_cinnamondolcelatte">
+                <h1 style="text-align: center;">Cinnamon Dolce Latte</h1>
+                <div class="container_foto_especificacoes_cafe">
+                    <img src="../IMAGENS/cinnamon_dolce_latte_esp.png">
+                </div>
+                <p>O Cinnamon Dolce Latte combina espresso, leite vaporizado e xarope de canela doce. 
+                    Normalmente é finalizado com chantilly e uma pitada de açúcar com canela por cima. É 
+                    uma bebida aromática, levemente adocicada e muito reconfortante. O aroma da canela 
+                    se destaca logo no primeiro contato. É perfeito para dias mais frios ou momentos aconchegantes.</p>
+            </div>
+        </div>
+        <div class="container_menu_bebidas">
+            <img src="../IMAGENS/capuccino_foto.png" width="400px">
+            <div class="text_cappucino">
+                <h1 style="text-align: center;">Capuccino</h1>
+                <div class="container_foto_especificacoes_cafe">
+                    <img src="../IMAGENS/capuccino_esp.png">
+                </div>
+                <p>O Cappuccino é uma bebida clássica italiana feita com partes equilibradas de espresso, 
+                    leite vaporizado e espuma de leite. Ele é mais leve que o latte, com uma camada espessa 
+                    de espuma e sabor marcante de café. A espuma
+                     cremosa traz leveza à bebida. É perfeito para começar o dia com energia e equilíbrio.</p>
+            </div>
+        </div>
+        <div class="container_menu_bebidas">
+            <img src="../IMAGENS/chai_tea_latte_foto.png" width="400px">
+            <div class="text_chaitealatte">
+                <h1 style="text-align: center;">Chai Tea Latte</h1>
+                <div class="container_foto_especificacoes_cafe">
+                    <img src="../IMAGENS/chai_tea_latte_esp.png">
+                </div>
+                <p>O Chai Tea Latte é feito com chá preto concentrado misturado com especiarias como canela,
+                     gengibre e cravo, combinado com leite vaporizado. É uma bebida aromática, levemente
+                      picante e sem café, ideal para quem quer algo diferente. Seu sabor exótico 
+                    aquece e conforta ao mesmo tempo. É uma ótima alternativa para quem prefere evitar cafeína.</p>
+            </div>
+        </div>
+        <div class="container_menu_bebidas">
+            <img src="../IMAGENS/espresso_machiatto_foto.png" width="400px">
+            <div class="text_espressomacchiato">
+                <h1 style="text-align: center;">Espresso Macchiato</h1>
+                <div class="container_foto_especificacoes_cafe">
+                    <img src="../IMAGENS/espresso_machiatto_esp.png">
+                </div>
+                <p>O Espresso Macchiato é simples e intenso: uma dose de espresso com uma pequena quantidade
+                     de espuma de leite por cima. Ele mantém o sabor forte do café, com apenas um toque de
+                      suavidade. É servido em pequenas 
+                    quantidades, mas com grande personalidade. Ideal para quem aprecia a essência pura do café.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

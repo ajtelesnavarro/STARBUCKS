@@ -1,0 +1,149 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>STARBUCKS</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=DM+Serif+Text:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- este é o corpo do nosso site, como se fosse o quadro em branco -->
+    <header>
+        <div class="container_logo">
+            <img src="../IMAGENS/Starbucks_Corporation_Logo_2011.svg.png" width="105px">
+            <a href="../HTML/index.html" class="redirecionar_index">
+                <div class="titulo_site">
+                    <p>STARBUCKS</p>
+                </div>
+            </a>
+            <!-- este é o cabeçalho do nosso site, nele conterá a logo, e o menu de navegação -->
+        </div>
+        <nav>
+            <!-- este é o comando específico que determina que tudo oq estiver aqui dentro é o menu de navegação, e é seguido por: -->
+            <ul class="menu-principal">
+                <!-- a criação de uma lista -->
+                <li>
+                    <!-- item de uma lista, porém, como vamos fazer com que cada item desta lista tenha outros itens precisamos de: -->
+                    <div>
+                        <!-- uma "caixinha" que vai guardar todas as nossas opções, porém como queremos que ela seja "dropdown", ou seja, aparecer
+                        apenas quando for clicada, precisamos de duas coisas: -->
+                        <input type="checkbox" id="lista-menu">
+                        <!-- criamos um campo, que com checkbox faz ele ser marcavel, e adicionamos uma id que precisaremos no: -->
+                        <label for="lista-menu">Menu</label>
+                        <!-- agora nos devemos criar a lista que vai ficar escondida no menu dropdown com: -->
+                        <ul class="dropdown">
+                            <li><a href="../HTML/bebidas_quentes.html">Bebidas Quentes</a></li>
+                            <li><a href="../HTML/bebidas_geladas.html">Bebidas Geladas</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="lista-pedidos">
+                        <label for="lista-pedidos">Pedidos</label>
+                        <ul class="dropdown">
+                            <li><a href="../HTML/fazer_pedido.html">Fazer um pedido</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="conteudo">
+        <div class="text_introducao_produtos_populares">
+            <h1 style="text-align: center; font-size: 32px;">Produtos Populares</h1>
+            <p style="margin: 0px 50px 50px 50px;">As bebidas mais populares da Starbucks
+                conquistaram espaço por combinarem sabor marcante, cremosidade e
+                personalidade em cada preparo. Entre opções quentes e geladas, elas
+                equilibram intensidade, doçura e textura, agradando tanto quem prefere
+                um café mais forte quanto quem gosta de algo mais suave e adocicado.
+                São escolhas que se destacam não apenas pelo sabor, mas pela experiência
+                completa que proporcionam a cada gole.
+            </p>
+            <h1 style="text-align: center; font-size: 30px;">Bebidas Quentes</h1>
+        </div>
+        <div class="container_produtos_populares">
+            <img src="../IMAGENS/flat_white_foto.png" width="400px">
+            <div class="text_produtos_populares">
+                <h1 style="text-align: center;">Flat White</h1>
+                <div class="container_foto_especificacoes_cafe">
+                    <img src="../IMAGENS/flat_white_esp.png">
+                </div>
+                <p>
+                    Intenso, cremoso e sofisticado. O Flat White combina uma dose generosa de espresso com leite
+                    vaporizado de microespuma fina, criando uma textura aveludada e um sabor marcante que destaca cada
+                    nota do café. Para quem aprecia força, equilíbrio e personalidade em cada gole.
+                </p>
+
+            </div>
+        </div>
+        <div class="container_produtos_populares">
+            <img src="../IMAGENS/caffe_mocha_foto.png" width="400px">
+            <div class="text_produtos_populares">
+                <h1 style="text-align: center;">Caffè Mocha</h1>
+                <div class="container_foto_especificacoes_cafe">
+                    <img src="../IMAGENS/caffe_mocha_esp.png">
+                </div>
+                <p>
+                    A união perfeita entre café e chocolate. O Caffè Mocha mistura espresso intenso, leite cremoso e
+                    calda de chocolate, finalizado com chantilly irresistível. Uma experiência envolvente, doce na
+                    medida certa e simplesmente inesquecível.
+                </p>
+            </div>
+        </div>
+        <div class="text_introducao_produtos_populares">
+            <h1 style="text-align: center; font-size: 32px;">Bebidas Geladas</h1>
+        </div>
+        <div class="container_produtos_populares">
+            <img src="../IMAGENS/pink_drink_foto.png" width="400px">
+            <div class="text_produtos_populares">
+                <h1 style="text-align: center;">Pink Drink</h1>
+                <div class="container_foto_especificacoes_cafe">
+                    <img src="../IMAGENS/pink_drink_esp.png">
+                </div>
+                <p>
+                    Refrescante, leve e irresistivelmente vibrante. O Pink Drink combina a suavidade do leite de coco
+                    com notas frutadas e tropicais, criando uma bebida equilibrada e cheia de frescor. Perfeito para
+                    quem quer sabor, cor e uma experiência refrescante a cada gole.
+                </p>
+            </div>
+        </div>
+        <div class="container_produtos_populares">
+            <img src="../IMAGENS/iced_white_mocha_foto.png" width="400px">
+            <div class="text_produtos_populares">
+                <h1 style="text-align: center;">Iced White Mocha</h1>
+                <div class="container_foto_especificacoes_cafe">
+                    <img src="../IMAGENS/iced_white_mocha_esp.png">
+                </div>
+                <p>
+                    Gelado, cremoso e irresistivelmente marcante. O Iced White Mocha combina espresso intenso, leite
+                    suave e a doçura envolvente do chocolate branco, servido com gelo para um toque extra de frescor. A
+                    escolha perfeita para quem quer refrescância sem abrir mão da cremosidade.
+                </p>
+
+            </div>
+        </div>
+
+
+    </section>
+    <h1>Porque o café STARBUCKS™ é o melhor?</h1>
+    <p>Se você está procurando mais do que apenas café, você está procurando a experiência da
+        Starbucks. Aqui, cada xícara é preparada com grãos 100% arábica cuidadosamente
+        selecionados e torrados para revelar aromas intensos, notas marcantes e um sabor
+        inconfundível. Não é apenas uma bebida — é um momento de prazer em cada gole.<br><br>
+        No Starbucks, você tem liberdade para criar o café perfeito para o seu gosto.
+        Prefere mais cremoso? Mais intenso? Com toque de caramelo ou chocolate? Cada
+        detalhe pode ser personalizado para que a bebida combine exatamente com você.
+        Essa atenção aos detalhes transforma algo simples em uma experiência única e
+        especial.<br><br>Além do sabor, existe o ambiente: acolhedor, moderno e perfeito
+        para estudar, trabalhar ou encontrar amigos. O Starbucks não vende apenas café —
+        vende conforto, qualidade e um estilo de vida. Experimente e descubra por que
+        milhões de pessoas ao redor do mundo escolhem essa marca todos os dias.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,331 @@
+body {
+    background:
+        linear-gradient(rgb(255, 255, 255), rgb(223, 238, 212));
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0;
+}
+
+header {
+    background-color: rgb(223, 238, 212);
+    padding: 5px;
+
+    width: 100%;
+}
+
+.container_logo {
+    /* iremos tornar todos os elementos dentro dela flexiveis*/
+    display: flex;
+
+    /* agora centralizamos na vertical */
+    align-items: center;
+
+    /* agora centralizamos no meio na página */
+    justify-content: center;
+
+    /* agora definimos a altura da tela inteira */
+    height: 110px;
+
+    /* agora adicionamos um espaço entre os dois elementos */
+    gap: 0px;
+}
+
+.redirecionar_index {
+    text-decoration: none;
+    color: inherit;
+    /* mantém a cor do texto */
+    display: block;
+    /* faz o link ocupar toda a área */
+}
+
+.titulo_site p {
+    font-family: 'DM Serif Text', serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: darkgreen
+}
+
+label {
+    cursor: pointer;
+
+    /* alinha o texto e controla melhor o clique */
+    display: flex;
+
+    /* organiza verticalmente*/
+    align-items: center;
+
+    color: darkgreen;
+    font-weight: bold;
+
+    /* nao fica azul quando clica */
+    user-select: none;
+}
+
+body h1 {
+    padding: 10px;
+    padding-left: 50px;
+    font-family: 'DM Serif Text', serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: darkgreen
+}
+
+body p {
+    padding-left: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgb(2, 94, 2)
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+
+    /* garante que o justify content vai funcionar so na horizontal */
+    flex-direction: row;
+
+    /* remove as bolinhas da lista */
+    list-style: none;
+}
+
+
+
+nav ul li {
+    /* é uma refrenrecia pro dropdown */
+    position: relative;
+    text-align: left;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+
+nav input[type="checkbox"] {
+    /* ele não ocupa espaço e fica flutuando invisivel,
+    perfeito para esconder uma checkbox */
+    position: absolute;
+
+    /* deixa invisivel */
+    opacity: 0;
+
+    /* ele não vai receber nenhum clique mesmo que cliquem no invisivel,
+    só funcionara atraves do label */
+    pointer-events: none;
+
+    width: 0;
+    height: 0;
+}
+
+.dropdown {
+
+    /* a altura minima é zero
+    max-height: 0;
+
+    /* esconder tudo mesmo que o height seja 0 */
+    /* overflow: hidden;
+
+    /* quando o max-height mudar, anime com 0,4s de duração
+    e ease significa que começa devagar e termina rapido, ele
+    vai mudar o estado do fechado pro aberto com esse código */
+    /*transition: max-height 0.4s ease;
+
+    /* display: block; */
+    display: block;
+    /* mata o flex herdado */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* a mudanda acontece aqui */
+input[type="checkbox"]:checked~.dropdown {
+    max-height: 300px;
+}
+
+.menu-principal {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul div {
+    padding: 10px;
+}
+
+
+
+
+nav ul li div label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+nav ul li div ul li a {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: green;
+}
+
+
+
+a:visited {
+    color: green;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+.container_menu_bebidas {
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    background: rgb(223, 238, 212);
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgb(2, 94, 2);
+    margin: 0 200px 100px 200px;
+}
+
+
+
+.container_formulario_pedido_geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: rgb(223, 238, 212);
+    border-radius: 20px;
+    font-size: 18px;
+    color: rgb(2, 94, 2);
+    margin: 50px 150px 50px 150px;
+}
+
+.container_formulario_pedido_bloco {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container_formulario_pedido_bloco input,
+.container_formulario_pedido_bloco select,
+.container_formulario_pedido_bloco textarea,
+.container_formulario_pedido_bloco button {
+    width: 250px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid rgb(2, 94, 2);
+    border-radius: 15px;
+    background-color: rgb(223, 238, 212);
+    margin-bottom: 15px;
+}
+
+.container_formulario_pedido_bloco input::placeholder,
+.container_formulario_pedido_bloco select option,
+.container_formulario_pedido_bloco textarea::placeholder,
+.container_formulario_pedido_bloco button {
+    font-size: 18px;
+    color: rgba(2, 94, 2, 0.8);
+}
+.checkbox-linha {
+    display: flex;
+    align-items: center; /* ALINHA NA VERTICAL */
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    color: rgb(2, 94, 2);
+}
+
+.checkbox-linha input {
+    width: 18px;
+    height: 18px;
+    accent-color: rgb(2, 94, 2);
+}
+.container_formulario_pedido_geral p{
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container_formulario_login_geral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: rgb(223, 238, 212, 0.5);
+    border-radius: 20px;
+    font-size: 18px;
+    color: rgb(2, 94, 2);
+    margin: 50px 150px 50px 150px;
+}
+.container_formulario_login_bloco{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.container_formulario_login_bloco input,
+.container_formulario_login_bloco button{
+    width: 250px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid rgb(2, 94, 2);
+    border-radius: 15px;
+    background-color: rgb(223, 238, 212);
+    margin-bottom: 15px;
+}
+.container_formulario_login_bloco input::placeholder,
+.container_formulario_login_bloco button{
+    font-size: 18px;
+    color: rgba(2, 94, 2, 0.8);
+}
+
+.container_foto_especificacoes_cafe{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+.container_foto_especificacoes_cafe img{
+    width: 400px;
+}
+.conteudo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 150px;
+    background: rgb(223, 238, 212);
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgb(2, 94, 2);
+    margin: 40px 200px 100px 200px;
+    display: flex; /* força ficar um embaixo do outro */
+    align-items: center;    /* centraliza horizontalmente */
+}
+.container_produtos_populares{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.text_produtos_populares{
+    display: flex;
+    flex-direction: column;
+}

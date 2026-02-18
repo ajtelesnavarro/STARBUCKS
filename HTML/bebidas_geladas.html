@@ -1,0 +1,189 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BEBIDAS QUENTES</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=DM+Serif+Text:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- este é o corpo do nosso site, como se fosse o quadro em branco -->
+    <header>
+        <div class="container_logo">
+            <img src="../IMAGENS/Starbucks_Corporation_Logo_2011.svg.png" width="105px">
+            <a href="../HTML/index.html" class="redirecionar_index">
+                <div class="titulo_site">
+                    <p>STARBUCKS</p>
+                </div>
+            </a>
+            <!-- este é o cabeçalho do nosso site, nele conterá a logo, e o menu de navegação -->
+        </div>
+        <nav>
+            <!-- este é o comando específico que determina que tudo oq estiver aqui dentro é o menu de navegação, e é seguido por: -->
+            <ul class="menu-principal">
+                <!-- a criação de uma lista -->
+                <li>
+                    <!-- item de uma lista, porém, como vamos fazer com que cada item desta lista tenha outros itens precisamos de: -->
+                    <div>
+                        <!-- uma "caixinha" que vai guardar todas as nossas opções, porém como queremos que ela seja "dropdown", ou seja, aparecer
+                        apenas quando for clicada, precisamos de duas coisas: -->
+                        <input type="checkbox" id="lista-menu">
+                        <!-- criamos um campo, que com checkbox faz ele ser marcavel, e adicionamos uma id que precisaremos no: -->
+                        <label for="lista-menu">Menu</label>
+                        <!-- agora nos devemos criar a lista que vai ficar escondida no menu dropdown com: -->
+                        <ul class="dropdown">
+                            <li><a href="../HTML/bebidas_quentes.html">Bebidas Quentes</a></li>
+                            <li><a href="../HTML/bebidas_geladas.html">Bebidas Geladas</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="lista-pedidos">
+                        <label for="lista-pedidos">Pedidos</label>
+                        <ul class="dropdown">
+                            <li><a href="../HTML/fazer_pedido.html">Fazer um pedido</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Bebidas Geladas</h1>
+    <p>As bebidas geladas são refrescantes, leves e ideais para dias quentes ou para quem prefere
+         uma experiência mais suave e revigorante. Combinando café, leite, gelo e diferentes
+          sabores, elas mantêm a intensidade do espresso enquanto oferecem frescor e equilíbrio.
+           São opções versáteis, que podem
+         ser mais doces ou mais intensas, proporcionando energia e sabor de maneira refrescante.</p>
+    <div class="container_menu_bebidas">
+        <img src="../IMAGENS/iced_caramel_macchiato_foto.png" width="400px">
+        <div class="text_icedcaramelmacchiato">
+            <h1 style="text-align: center;">Iced Caramel Macchiato</h1>
+            <div class="container_foto_especificacoes_cafe">
+                <img src="../IMAGENS/iced_caramel_macchiato_esp.png">
+            </div>
+            <p>A versão gelada do Caramel Macchiato é feita com gelo, leite, baunilha, espresso e
+                finalizada com calda de caramelo. É refrescante, doce e mantém o contraste entre o café
+                forte e o caramelo. As camadas criam uma experiência visual e gustativa
+                interessante. É uma excelente opção para dias quentes.</p>
+        </div>
+    </div>
+    <div class="container_menu_bebidas">
+        <img src="../IMAGENS/vanilla_sweet_cream_cold_brew_foto.png" width="400px">
+        <div class="text_vanillasweetcreamcoldbrew">
+            <h1 style="text-align: center;">Vanilla Sweet Cream Cold Brew</h1>
+            <div class="container_foto_especificacoes_cafe">
+                <img src="../IMAGENS/vanilla_sweet_cream_cold_brew_esp.png">
+            </div>
+            <p>Essa bebida combina Cold Brew (café extraído a frio) com uma camada de creme doce de
+                baunilha por cima. O sabor é suave, levemente adocicado e menos ácido que o café tradicional. O creme
+                adiciona textura rica e equilibrada. É ideal para quem gosta de café gelado mais delicado.</p>
+        </div>
+    </div>
+    <div class="container_menu_bebidas">
+        <img src="../IMAGENS/pumpkin_cream_cold_brew_foto.png" width="400px">
+        <div class="text_pumpkincreamcoldbrew">
+            <h1 style="text-align: center;">Pumpkin Cream Cold Brew</h1>
+            <div class="container_foto_especificacoes_cafe">
+                <img src="../IMAGENS/pumpkin_cream_cold_brew_esp.png">
+            </div>
+            <p>O Pumpkin Cream Cold Brew mistura café extraído a frio com uma espuma cremosa sabor
+                abóbora e especiarias por cima. É refrescante, mas ao mesmo tempo traz o sabor marcante
+                e aconchegante das especiarias. A combinação
+                equilibra frescor e intensidade. É uma versão diferenciada para fãs de sabores sazonais.</p>
+        </div>
+    </div>
+    <div class="container_menu_bebidas">
+        <img src="../IMAGENS/pink_drink_foto.png" width="400px">
+        <div class="text_pinkdrink">
+            <h1 style="text-align: center;">Pink Drink</h1>
+            <div class="container_foto_especificacoes_cafe">
+                <img src="../IMAGENS/pink_drink_esp.png">
+            </div>
+            <p>O Pink Drink é uma bebida refrescante feita com base de morango e açaí, leite de coco
+                e pedaços de morango. Tem cor rosa vibrante, sabor frutado e levemente doce. É leve
+                e tropical, perfeita para o verão. Sua aparência chamativa faz sucesso nas redes sociais.</p>
+        </div>
+    </div>
+    <div class="container_menu_bebidas">
+        <img src="../IMAGENS/strawberry_acai_refresher_foto.png" width="400px">
+        <div class="text_strawberry_acai_refresher">
+            <h1 style="text-align: center;">Strawberry Açaí Refresher</h1>
+            <div class="container_foto_especificacoes_cafe">
+                <img src="../IMAGENS/strawberry_acai_refresher_esp.png">
+            </div>
+            <p>O Strawberry Açaí Refresher é uma bebida leve e refrescante feita com base de morango e
+                açaí, misturada com água ou limonada e pedaços de morango. É ideal para dias quentes.
+                Seu sabor é equilibrado entre doce e cítrico. É uma opção energizante e bastante popular.</p>
+        </div>
+    </div>
+    <div class="container_menu_bebidas">
+        <img src="../IMAGENS/iced_white_mocha_foto.png" width="400px">
+        <div class="text_icedwhitemocha">
+            <h1 style="text-align: center;">Iced White Mocha</h1>
+            <div class="container_foto_especificacoes_cafe">
+                <img src="../IMAGENS/iced_white_mocha_esp.png">
+            </div>
+            <p>O Iced White Mocha combina espresso, leite, gelo e calda de chocolate branco. É doce,
+                cremosa e perfeita para quem prefere um sabor mais suave e açucarado. O chocolate branco traz uma
+                doçura marcante e delicada. É uma escolha ideal para quem gosta de cafés mais indulgentes.</p>
+        </div>
+    </div>
+    <div class="container_menu_bebidas">
+        <img src="../IMAGENS/brown_sugar_oatmilk_shaken_espresso_foto.png" width="400px">
+        <div class="text_brownsugaroatmilkshakenespresso">
+            <h1 style="text-align: center;">Brown Sugar Oatmilk Shaken Espresso</h1>
+            <div class="container_foto_especificacoes_cafe">
+                <img src="../IMAGENS/brown_sugar_oatmilk_shaken_espresso_esp.png">
+            </div>
+            <p>Essa é a versão gelada do Brown Sugar Oatmilk Shaken Espresso, com espresso, açúcar
+                mascavo, leite de aveia e gelo, agitados para criar leveza e espuma natural. É refrescante e levemente
+                caramelizada.
+                A textura leve deixa o café mais equilibrado. É uma opção moderna e muito apreciada.</p>
+        </div>
+    </div>
+    <div class="container_menu_bebidas">
+        <img src="../IMAGENS/cold_brew_foto.png" width="400px">
+        <div class="text_coldbrew">
+            <h1 style="text-align: center;">Cold Brew</h1>
+            <div class="container_foto_especificacoes_cafe">
+                <img src="../IMAGENS/cold_brew_esp.png">
+            </div>
+            <p>O Cold Brew é preparado com café extraído lentamente em água fria por várias horas. O
+                resultado é uma bebida suave, menos ácida e naturalmente levemente adocicada. Seu processo de preparo
+                realça
+                notas mais delicadas do café. É perfeito para quem busca um sabor mais suave e refrescante.</p>
+        </div>
+    </div>
+    <div class="container_menu_bebidas">
+        <img src="../IMAGENS/iced_blonde_vanilla_latte.png" width="400px">
+        <div class="text_icedblondevanillalatte">
+            <h1 style="text-align: center;">Iced Blonde Vanilla Latte</h1>
+            <div class="container_foto_especificacoes_cafe">
+                <img src="../IMAGENS/blonde_vanilla_latte_esp.png">
+            </div>
+            <p>O Iced Blonde Vanilla Latte combina espresso Blonde, leite, gelo e xarope de baunilha.
+                É refrescante, suave e levemente doce. O espresso mais claro
+                deixa a bebida menos intensa. É ideal para quem prefere cafés gelados mais equilibrados.</p>
+        </div>
+    </div>
+    <div class="container_menu_bebidas">
+        <img src="../IMAGENS/iced_cinnamon_dolce_latte_foto.png" width="400px">
+        <div class="text_icedcinnamondolcelatte">
+            <h1 style="text-align: center;">Iced Cinnamon Dolce Latte</h1>
+            <div class="container_foto_especificacoes_cafe">
+                <img src="../IMAGENS/iced_cinnamon_dolce_latte_esp.png">
+            </div>
+            <p>Essa versão gelada do Cinnamon Dolce Latte mistura espresso, leite, gelo e xarope de
+                canela doce, criando uma bebida aromática, refrescante e com toque especiado. A canela adiciona
+                personalidade ao sabor. É uma opção diferenciada para quem gosta de sabores marcantes.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
