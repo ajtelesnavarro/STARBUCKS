@@ -1,6 +1,6 @@
 body {
     background:
-        linear-gradient(rgb(255, 255, 255), rgb(223, 238, 212));
+        rgb(223, 238, 212);
 
     background-size: cover;
     background-position: center;
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: rgb(223, 238, 212);
+    background-color: rgb(255, 255, 255);
     padding: 5px;
 
     width: 100%;
@@ -196,7 +196,7 @@ a:visited {
     align-items: center;
     padding-left: 150px;
     padding-right: 150px;
-    background: rgb(223, 238, 212);
+    background: rgb(255, 255, 255);
     border-radius: 20px;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -311,7 +311,7 @@ a:visited {
     flex-direction: column;
     padding-left: 150px;
     padding-right: 150px;
-    background: rgb(223, 238, 212);
+    background: rgb(255, 255, 255);
     border-radius: 20px;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
